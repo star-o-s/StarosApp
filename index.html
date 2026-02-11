@@ -3,37 +3,78 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fondo día/noche</title>
+<title>starOS</title>
 <style>
-    body {
+    /* Reset básico */
+    * {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
+        font-family: 'Arial', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
         height: 100vh;
         width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centra vertical */
+        align-items: center;     /* Centra horizontal */
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         transition: background 1s ease;
+        text-align: center;
+        color: #ffffff;
+        background-color: #111; /* Fallback por si no carga imagen */
+    }
+
+    h1 {
+        font-size: 8rem;
+        margin-bottom: 1rem;
+		font-weight: normal;
+        text-shadow: 2px 2px 18px rgba(0,0,0,0.7);
+    }
+	
+    h2 {
+        font-size: 1rem;
+        margin-bottom: 5rem;
+		font-weight: normal;
+        text-shadow: 2px 2px 18px rgba(0,0,0,0.7);
+    }
+	
+    .download-button {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: #999999;
+        text-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        
+    }
+
+    .download-button:hover {
+        color: #fafafa;
     }
 </style>
 </head>
 <body>
 
+<h1>starOs</h1>
+<h2>By Yuri Ulyanov (Barahona Rodríguez)<h2>
+<a href="https://drive.google.com/file/d/1rA4zA1hXnbqcoU3dA001I5rzztdK04GV/view?usp=share_link" class="download-button">Download the app to try it out</a>
+
 <script>
-    // Ejecutar cuando el DOM esté listo
-    window.addEventListener('DOMContentLoaded', () => {
-        const now = new Date();
-        const hour = now.getHours();
-        let fondo;
+    // Cambiar fondo día/noche automáticamente
+    const now = new Date();
+    const hour = now.getHours();
+    let fondo;
 
-        if (hour >= 6 && hour < 18) {
-            fondo = 'WallDia.png';
-        } else {
-            fondo = 'WallNoch.png';
-        }
+    if (hour >= 6 && hour < 18) {
+        fondo = 'WallDia.png';
+    } else {
+        fondo = 'WallNoch.png';
+    }
 
-        document.body.style.backgroundImage = `url('${fondo}')`;
-    });
+    document.body.style.backgroundImage = `url('${fondo}')`;
 </script>
 
 </body>

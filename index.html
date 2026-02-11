@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fondo día/noche</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: background 1s ease;
+    }
+</style>
+</head>
+<body>
+
+<script>
+    // Ejecutar cuando el DOM esté listo
+    window.addEventListener('DOMContentLoaded', () => {
+        const now = new Date();
+        const hour = now.getHours();
+        let fondo;
+
+        if (hour >= 6 && hour < 18) {
+            fondo = 'WallDia.png';
+        } else {
+            fondo = 'WallNoch.png';
+        }
+
+        document.body.style.backgroundImage = `url('${fondo}')`;
+    });
+</script>
+
+</body>
+</html>

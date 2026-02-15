@@ -1,4 +1,4 @@
-starOs - Operating System Concepto. 
+starOs - Operating System Concept. 
 
 Tip: Maximize the window to improve the experience.
 

@@ -5,7 +5,7 @@ Tip: Maximize the window to improve the experience.
 Mac version, coming soon to Windows.
 
 <p align="center">
-  <img src="WallNoch2.png" width="100%" />
+  <img src="WallDia2.png" width="100%" />
 </p>
 
 By me, Yuri Ulyanov (BR).

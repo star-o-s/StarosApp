@@ -7,8 +7,10 @@ Mac version, coming soon to Windows.
 <p align="center">
   <img src="WallDia2.png" width="100%" />
   <img src="web.png" width="100%" />
+  /*
   <img src="player.png" width="100%" />
   <img src="images.png" width="100%" />
+  */
 </p>
 
 By me, Yuri Ulyanov (BR).

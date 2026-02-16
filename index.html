@@ -30,11 +30,17 @@
     }
 
     h1 {
-        font-size: 8rem;
-        margin-bottom: 1rem;
-		font-weight: normal;
-        text-shadow: 2px 2px 11px rgba(0,0,0,0.7);
-    }
+    font-size: 8rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.3); /* Sombra suavizada para que luzca el color */
+
+    /* Configuración del degradado */
+    background: linear-gradient(to right, #FDE690, #FE7A7A, #A1C1F7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
 	
     h2 {
         font-size: 1rem;

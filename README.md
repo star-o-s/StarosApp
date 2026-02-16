@@ -2,7 +2,7 @@ starOs - Operating System Concept.
 
 Tip: Maximize the window to improve the experience.
 
-Mac version, coming soon to Windows.
+Mac version.
 
 <p align="center">
   <img src="WallDia2.png" width="100%" />

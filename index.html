@@ -14,22 +14,35 @@
     }
 
     body {
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center; /* Centra vertical */
-        align-items: center;     /* Centra horizontal */
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        transition: background 1s ease;
-        text-align: center;
-        color: #ffffff;
-        background-color: #111; /* Fallback por si no carga imagen */
-		background-image: url("fondo5.png");
-    }
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    
+    /* Fondo Degradado Animado */
+    background: linear-gradient(-45deg, #4697FF, #FC4444, #4697FF, #FC4444);
+    background-size: 400% 400%;
+    animation: gradientMovement 10s ease infinite;
+    
+    transition: background 1s ease;
+}
 
+/* Definición del movimiento */
+@keyframes gradientMovement {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
     h1 {
     font-size: 5rem;
     margin-bottom: 1rem;
